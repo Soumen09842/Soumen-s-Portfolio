@@ -1,0 +1,1052 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumen's Portfolio</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>  
+       @keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease-out;
+}
+
+
+.show {
+  animation: slideFromLeft 1s ease-out forwards;
+}
+
+
+h1.show { animation-delay: 0.1s; }
+h2.show { animation-delay: 0.2s; }
+h3.show { animation-delay: 0.3s; }
+p.show  { animation-delay: 0.4s; }
+
+
+@media (max-width: 768px) {
+  @keyframes slideFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    transition: all 0.6s ease-out;
+  }
+} 
+    p{
+  font-family: "Montserrat", sans-serif;
+
+  font-optical-sizing: auto;
+
+  font-weight: 400;
+
+  font-style:inherit;
+
+}   
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(4,4,35);
+            color: white;
+            font-family:'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(20,20,35);
+        }
+        nav ul{
+           display: flex;
+           justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+         nav ul li a{
+           text-decoration:none;
+            color: rgb(223, 229, 235);
+        }
+        nav ul li a:hover{
+            color:rgb(154, 154, 231);
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.3rem;
+        }
+        .firstSection{
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            margin: 120px 0;
+        }
+        .firstSection>div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 3rem;
+        }
+        .rightSection{
+           width: 50%;
+           margin: 50px 0;
+        }
+        .purple{
+            color:rgb(160, 56, 160)
+        }
+        #element{
+            color:rgb(160, 56, 160)
+        }
+        .secondsection
+        {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .secondsection h1{
+            font-size: 1.7rem;
+        }
+        .text-grey{
+            color: grey;
+        }
+        .secondsection .box{
+            background: white;
+            height: 2px;
+            width: 78vw;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondsection.vertical{
+            height: 95px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+    .intro{
+        height: 240px;
+        border: 2px ;
+        text-align: center;
+    }
+    p{
+        margin-top: 30px;
+        width: 98%;
+        font-family:serif;
+        font-size: large;
+    }
+       
+    button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(107, 91, 149, 0.5);
+}
+h1 ,h2{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-style: normal;
+}
+.about{
+ height: 800px;
+}
+.about-me {
+    border: 2px solid wheat;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 19px;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.about-me h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+   
+}
+
+.about-me h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.location {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.bio {
+    margin-bottom: 2rem;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column; /* Makes items stack vertically */
+  align-items: flex-start; /* Align to left */
+  gap: 8px; /* Space between items */
+  color: #00aaff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icons i {
+  color: red;
+  font-size: 20px;
+}
+
+.contact a {
+  color: #008cff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.skills-section {
+  background-color: #060b26;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 60px;
+  margin-top: 90px;
+   max-height: 820px;
+  width: 79%;
+  border: 2px solid wheat;
+  margin-left: 58px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+}
+
+.skill-category h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-badge {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(30, 144, 255, 0.3);
+}
+
+.skill-badge:hover {
+  background-color: #0d6efd;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(30, 144, 255, 0.5);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .skills-section {
+    padding: 30px 40px;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .skill-badge {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 20px;
+  }
+
+  .skills-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .skills-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .skill-badge {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+}
+
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-style: normal;
+}
+.achive {
+  height: 812px;
+  width: 89.5%;
+  border: 2px solid wheat;
+  margin-left: 58px;
+  margin: 50px;
+
+}
+.achievements {
+  padding: 80px 10%;
+  background: #0f172a; 
+  color: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #38bdf8; 
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.achievement-card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.4);
+}
+
+.achievement-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.achievement-card p,
+.achievement-card ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.achievement-card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .achievement-card {
+    padding: 20px;
+  }
+}
+.education {
+ text-align: center;
+  padding: 80px 10%;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: "Poppins", sans-serif;
+  max-height: auto;
+  max-width: 70%;
+  border: 2px solid wheat;
+  margin-left: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #38bdf8;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.edu-card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #38bdf8;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.4);
+}
+
+.edu-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #38bdf8;
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin-bottom: 6px;
+}
+
+.edu-duration {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.edu-card p,
+.edu-card ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.edu-card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.a{
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .edu-card {
+    padding: 20px;
+  }
+}
+.contact1 {
+  padding: 80px 10%;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+   max-height: 820px;
+  max-width: 70%;
+  border: 2px solid wheat;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 50px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  text-decoration: none;
+  color: #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.4);
+}
+
+.contact-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #38bdf8;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .contact-card {
+    padding: 20px;
+  }
+}
+/* ===== Footer Section ===== */
+.footer {
+  background: linear-gradient(135deg, #0a0a0a, #1e1e1e);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #00adb5;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #00adb5;
+}
+
+.footer-text {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #00adb5;
+  border: 1px solid #00adb5;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  background: #00adb5;
+  color: #111;
+  transform: scale(1.05);
+}
+
+.footer-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #00adb5;
+  color: #111;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #08d9d6;
+  transform: translateY(-3px);
+}
+
+.footer-end {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-end span {
+  color: #00adb5;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .footer-title {
+    font-size: 1.4rem;
+  }
+
+  .social-links a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .footer-btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}
+        @media (max-width: 768px) {
+
+  
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .firstSection > div {
+    width: 100%;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .rightSection img {
+    width: 200px;
+    height: 200px;
+  }
+
+ 
+  .intro p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .about {
+    height: auto;
+    margin: 0 10px;
+  }
+
+  .about-me {
+    width: 100%;
+    padding: 1rem;
+  }
+  .skills-section {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .achive {
+    width: 90%;
+    margin: 30px auto;
+    height: auto;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education {
+    width: 90%;
+    margin: 30px auto;
+    max-height: none;
+  }
+  .contact1 {
+    width: 90%;
+    margin: 40px auto;
+    max-height: none;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+}
+#viewCount {
+  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  #viewCount {
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Soumen's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                I am <span class="purple">Soumen's</span> |Turning Ideas into Interactive Web Realities |
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn" style="padding: 12px;
+             background: linear-gradient(135deg, #6b5b95, #b8a9c9);
+            color: white;
+            border: 2px soild white;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer; padding: 10px 20px; transition: all 0.3s ease;">Download Resume</button>
+                    <button class="btn" style="padding: 12px;
+            background: linear-gradient(135deg, #6b5b95, #b8a9c9);
+            color: white;
+            border: 3px soild white;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;padding:10px 20px; transition: all 0.3s ease;">GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection"><img src="img/IMG_20250227_122315.jpg" height="300px" width="300px" alt="" style=" border-radius: 50%;
+    border: 4px solid #4CAF50; box-shadow: 0 8px 20px rgba(0,0,0,0.3);"></div>
+        </section>
+        <hr>
+       <div class="expsec">
+        <div class="intro">
+            <h1>Introduction</h1>
+              
+            <p>
+                Hi, I’m Soumen Bag — a passionate Frantend Web Developer and Competitive Coder.
+I build efficient, scalable, and visually engaging digital experiences that merge clean design with powerful backend logic. My journey began with mastering Data Structures & Algorithms in C, and evolved into creating modern web applications using the latest technologies.
+
+I love solving complex problems, writing elegant code, and continuously learning to improve my craft. Whether it’s optimizing a backend API or designing an intuitive frontend interface, I aim to deliver impactful, high-performance solutions that make a difference.
+            </p>
+        </div>
+        <div class="about">
+            <h1 style="text-align: center;">About me</h1>
+            <section class="about-me">
+          <h1>Soumen Bag</h1>
+    <h2>Frantend Web Developer</h2>
+    
+    <p class="location">Kolaghat, West Bengal</p>
+    
+    <div class="bio">
+        <p>I am a passionate developer specializing in <strong>Frantend Web Development</strong> and <strong>Python Programming</strong>. I build dynamic, end-to-end web applications and love solving complex problems through clean, efficient code.</p>
+        
+        <p>Currently pursuing my bachelor degree in Information Technology at Maulana Abul Kalam Azad University of Technology.</p>
+        
+        <p class="status"><strong>Seeking entry-level developer opportunities</strong> where I can contribute to meaningful projects and continue growing my skills.</p>
+    </div>
+    
+    <div class="contact">
+        <h3>Let's connect:</h3>
+        <ul>
+       <div class="contact">
+  <div class="contact-item">
+    <i class="fa-solid fa-envelope"></i>
+    <a href="bagsoumen205@gmail.com">bagsoumen205@gmail.com</a>
+  </div>
+
+  <div class="contact-item">
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/soumen-bag-9bb9a7334" target="_blank">LinkedIn</a>
+  </div>
+
+  <div class="contact-item">
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/Soumen09842" target="_blank">GitHub</a>
+  </div>
+</div>              
+</ul>
+</div>
+</section>
+</div>
+
+   <section class="skills-section">
+  <h2>Technical Skills</h2>
+  <div class="skill-category">
+    <h3>▸ Frontend Development</h3>
+    <div class="skills-container">
+      <span class="skill-badge">HTML5</span>
+      <span class="skill-badge">CSS3</span>
+      <span class="skill-badge">JavaScript</span>
+      <span class="skill-badge">Bootstrap</span>
+      <span class="skill-badge">Responsive Design</span>
+    </div>
+  </div>
+  <div class="skill-category">
+    <h3>▸ Backend Development</h3>
+    <div class="skills-container">
+      <span class="skill-badge">Django</span>
+      <span class="skill-badge">PHP</span>
+    </div>
+  </div>
+  <div class="skill-category">
+    <h3>▸ Database & Tools</h3>
+    <div class="skills-container">
+      <span class="skill-badge">MySQL</span>
+      <span class="skill-badge">Git & GitHub</span>
+      <span class="skill-badge">VS Code</span>
+    </div>
+  </div>
+</section>
+<div class="achive">
+<section class="achievements" id="achievements">
+  <h1 style="text-align: center;padding-bottom: 48px;">🏆Achievements</h1>
+  
+  <div class="achievements-grid">
+    <div class="achievement-card">
+      <h3>💻 DSA Mastery</h3>
+      <p>Solved <strong>50+ problems on LeetCode</strong> and <strong>40+ on GeeksforGeeks</strong>. Completed <strong>Data Structures and Algorithms in Java</strong>.</p>
+    </div>
+
+    <div class="achievement-card">
+      <h3>⚔️ Competitive Programming</h3>
+      <ul>
+        <li>LeetCode Rating: <strong>6588</strong></li>
+        <li>CodeChef Rating: <strong>7550</strong></li>
+        <li>CodeForces Rating: <strong>1248</strong></li>
+        <li>Currently practicing and improving through regular contests.</li>
+      </ul>
+    </div>
+
+    <div class="achievement-card">
+      <h3>🌐 Web Development</h3>
+      <p>Completed <strong>HTML, CSS, JavaScript</strong>, and currently learning <strong>PHP Backend Development</strong> (Spring Boot, REST APIs, Databases).</p>
+    </div>
+
+    <div class="achievement-card">
+      <h3>🌍 Computer Networking</h3>
+      <p>Completed coursework in <strong>Computer Networking</strong> with a strong understanding of network fundamentals.</p>
+    </div>
+
+    <div class="achievement-card">
+      <h3>🚀 Current Focus</h3>
+      <p>Improving <strong>Backend Development</strong> skills and pursuing <strong>Competitive Programming</strong> excellence.</p>
+    </div>
+  </div>
+</section>
+</div>
+<section class="education" id="education">
+  <h2 class="section-title">🎓 Education</h2>
+  
+  <div class="education-timeline">
+    
+    <div class="edu-card">
+      <h3>Maulana Abul Kalam Azad University of Technology (MAKAUT)</h3>
+      <p class="edu-degree">Bachelor of Science in Information Technology</p>
+      <p class="edu-duration">2023 – Present | 3nd Year</p>
+      <ul>
+        <li class="a">1st Semester CGPA :<strong>8.00</strong></li>
+        <li class="a">2nd Semester CGPA :<strong>6.78</strong></li>
+        <li class="a">3rd Semester CGPA :<strong>7.67</strong></li>
+        <li class="a">4th Semester CGPA :<strong>8.17</strong></li>
+      </ul>
+    </div>
+
+    <div class="edu-card">
+      <h3>Ramchandra pur Baikuntha Vidyapith, Ramchandrapur</h3>
+      <p class="edu-degree">Higher Secondary (Class 12)</p>
+      <p class="edu-duration">2021 – 2023</p>
+      <p><strong>Percentage:</strong> 63.8%</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>Kola Union High School, Kolaghat</h3>
+      <p class="edu-degree">Secondary (Class 10)</p>
+      <p class="edu-duration">2020 – 2021</p>
+      <p><strong>Percentage:</strong> 82.3%</p>
+    </div>
+  </div>
+</section>
+<div class="coninfo">
+  <section class="contact1" id="contact">
+  <h2 class="section-title">📬 Contact & Profiles</h2>
+
+  <div class="contact-grid">
+
+    <a href="https://leetcode.com/u/soumen099/" target="_blank" class="contact-card">
+      <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="LeetCode Logo">
+      <h3>LeetCode</h3>
+      <p>@Soumen099</p>
+    </a>
+
+    <a href="https://www.geeksforgeeks.org/user/sarajitto3f/" target="_blank" class="contact-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GFG Logo">
+      <h3>GeeksforGeeks</h3>
+      <p>@sarajitto3f</p>
+    </a>
+
+    <a href="https://github.com/Soumen09842" target="_blank" class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+      <h3>Github</h3>
+      <p>@Soumen Bag</p>
+    </a>
+    
+     <a href="https://www.linkedin.com/in/soumen-bag-9bb9a7334" target="_blank" class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo">
+      <h3>LinkedIn</h3>
+      <p>@Soumen Bag</p>
+    </a>
+
+  </div>
+</section>
+</div>
+<hr>
+<footer class="footer">
+  <h2 class="footer-title">🚀 Let's Build Something Together!</h2>
+  <p class="footer-text">
+    I'm always excited to collaborate, learn, and create meaningful projects. 
+    Feel free to reach out or connect with me on my platforms below.
+  </p>
+
+  <div class="social-links">
+    <a href="https://leetcode.com/u/soumen099/" target="_blank">LeetCode</a>
+     <a href="https://github.com/Soumen09842" target="_blank">Github</a>
+    <a href="https://www.geeksforgeeks.org/user/sarajitto3f/" target="_blank">GFG</a>
+    <a href="https://www.linkedin.com/in/soumen-bag-9bb9a7334" target="_blank">LinkedIn</a>
+
+  </div>
+
+  <a href="mailto:bagsoumen205@gmail.com" class="footer-btn">Say Hello 👋</a>
+
+  <p class="footer-end">Made with ❤️ by <span>Soumen Bag</span> | © 2025</p>
+</footer>
+<script>
+ 
+  const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 }); 
+
+
+  elements.forEach(el => observer.observe(el));
+</script>
+        
+<div id="viewCount" style="
+  font-weight:600;
+  font-size:1rem;
+  margin-top:10px;
+  color:#333;
+  background:#f4f4f4;
+  padding:6px 10px;
+  border-radius:8px;
+  display:inline-block;
+">
+  Profile Viewers: ...
+</div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Developer</i> ', '<i>Coder</i>',],
+      typeSpeed: 50,
+    });
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
